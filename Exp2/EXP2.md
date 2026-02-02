@@ -47,7 +47,7 @@ Create a thread function that:
   - Extracts the start and end indices
   - Performs Bubble Sort only within the assigned range
 
-Step 6"
+Step 6:
 Create two sorting threads:
   - Thread 1 sorts index range 0 to chunk-1
   - Thread 2 sorts index range chunk to SIZE-1
@@ -55,7 +55,7 @@ Create two sorting threads:
 Step 7:
 Wait for both sorting threads to complete execution using pthread_join().
 
-Step 8p;
+Step 8:
 Define another structure to store merge parameters:
   - Starting index of left half
   - Starting index of right half
@@ -84,5 +84,4 @@ The given array of 10 elements was successfully sorted using multiple threads. P
 - Practical use of pthread_create() and pthread_join()
 - Importance of dividing work among threads
 - Understanding why a merge step is required after parallel sorting
-
-Hands-on experience with multithreaded programming in QNX RTOS
+- Hands-on experience with multithreaded programming in QNX RTOS
