@@ -3,6 +3,8 @@
 ### Aim: 
 Program that creates multiple child processes using fork() and print different messages in parent and child process.
 
+------------------------------
+
 ### Algorithm:
 1.	Start the program.
 
