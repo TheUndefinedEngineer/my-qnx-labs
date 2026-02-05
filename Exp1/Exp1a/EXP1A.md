@@ -37,7 +37,7 @@ Algorithm:
 The program was successfully executed and multiple child processes were created using the fork() system call.
 Different messages were printed by the parent process and each child process, along with their respective Process IDs (PID) and Parent Process IDs (PPID), confirming the creation and execution of multiple processes.
 
-⸻
+-----------------------
 
 ## Key Outcomes
 
@@ -55,3 +55,5 @@ Different messages were printed by the parent process and each child process, al
 	
 6.	Gained practical exposure to process management in UNIX/Linux operating systems.
 
+-----------------------
+*fork() duplicates the calling process, creating a parent–child relationship where both execute concurrently.*
