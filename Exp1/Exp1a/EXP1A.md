@@ -1,8 +1,9 @@
 # Experiment 1A Detail 
 
-Aim: Program that creates multiple child processes using fork() and print different messages in parent and child process.
+### Aim: 
+Program that creates multiple child processes using fork() and print different messages in parent and child process.
 
-Algorithm:
+### Algorithm:
 1.	Start the program.
 
 2.	Declare required variables to store process IDs (pid_t pid1, pid2, etc.).
@@ -32,14 +33,14 @@ Algorithm:
 
 ------------------------------
 
-## Result 
+### Result 
 
 The program was successfully executed and multiple child processes were created using the fork() system call.
 Different messages were printed by the parent process and each child process, along with their respective Process IDs (PID) and Parent Process IDs (PPID), confirming the creation and execution of multiple processes.
 
 -----------------------
 
-## Key Outcomes
+### Key Outcomes
 
 1.	Understood the working of the fork() system call in process creation.
 
