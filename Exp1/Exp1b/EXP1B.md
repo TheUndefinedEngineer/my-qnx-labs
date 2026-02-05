@@ -36,3 +36,28 @@ Program that terminates the parent after 5 seconds and print the pid from the ch
 
 8. Stop the program.
 
+------------------------
+
+### Result
+
+The program was successfully executed such that the parent process terminated after 5 seconds, while the child process continued execution and printed its process ID (PID).
+After the termination of the parent, the child process was observed to be adopted by the init/systemd process, confirming the behavior of an orphan process.
+
+------------------------
+
+### Key Outcomes
+
+1.	Understood the use of fork() to create a parent and child process.
+	
+2.	Learned how a parent process can be terminated using sleep() followed by exit().
+	
+3.	Observed that the child process continues execution even after the parent terminates.
+	
+4.	Verified the creation of an orphan process when the parent process exits before the child.
+	
+5.	Understood how the child process PID remains unchanged, while the PPID changes after parent termination.
+	
+6.	Gained practical understanding of process life cycle management in UNIX/Linux systems.
+
+------------------------
+*When a parent process terminates before its child, the child becomes an orphan and is adopted by the init/system process.*
