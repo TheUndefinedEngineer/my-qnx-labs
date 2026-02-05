@@ -3,11 +3,11 @@
 ## Experiment 1
 A. Aim : To write a program that creates multiple child processes using fork() and print different messages in parent and child process. Terminate the parent after 5 seconds and print the pid from the child.
 
-[Experiment 1A – ](Exp1/Exp1a/EXP1A.md)
+[Experiment 1A – Process Creation Using fork()](Exp1/Exp1a/EXP1A.md)
 
 B. Aim : Program that terminates the parent after 5 seconds and print the pid from the child.
 
-[Experiment 1B – ](Exp1/Exp1b/EXP1B.md)
+[Experiment 1B – Parent Process Termination and Child PID Display](Exp1/Exp1b/EXP1B.md)
 
 
 ## Experiment 2
