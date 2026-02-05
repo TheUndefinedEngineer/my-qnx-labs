@@ -30,3 +30,28 @@ Algorithm:
 
 9.	Stop the program.
 
+------------------------------
+
+## Result 
+
+The program was successfully executed and multiple child processes were created using the fork() system call.
+Different messages were printed by the parent process and each child process, along with their respective Process IDs (PID) and Parent Process IDs (PPID), confirming the creation and execution of multiple processes.
+
+⸻
+
+## Key Outcomes
+
+1.	Understood the working of the fork() system call in process creation.
+
+2.	Observed that fork() returns:
+	- 0 in the child process
+	- A positive value (child PID) in the parent process.
+	
+3.	Learned how multiple fork() calls create multiple processes.
+	
+4.	Verified the parent–child relationship using PID and PPID values.
+	
+5.	Understood that parent and child execute the same code, but follow different execution paths.
+	
+6.	Gained practical exposure to process management in UNIX/Linux operating systems.
+
