@@ -16,5 +16,5 @@ Aim : To implement a multithreaded application using POSIX threads in which mult
 [Experiment 2 – Multithreaded using POSIX Threads](Exp2/EXP2.md)
 
 
-## Experiment 2
+## Experiment 3
 Aim: To write a program to create a process with 4 threads that update the portion of array of size 1000 bytes by updating 250 bytes each. Make the main thread to join on the 4 threads and print the completion. Use mutex to prevent data corruption while each thread is updating the array.
