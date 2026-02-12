@@ -32,3 +32,6 @@ Step 1: Start the program.
 Step 2: Declare a global integer array of size 1000.
 
 Step 3: Define the number of threads as 4 and calculate chunk size as:
+'''code
+chunk = SIZE / THREADS
+'''
