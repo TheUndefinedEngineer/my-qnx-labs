@@ -1,12 +1,12 @@
-Experiment 3 Detail
+# Experiment 3 Detail
 
-Aim
+## Aim
 
 To create a multithreaded application using POSIX threads in which four threads update different segments of a shared array of size 1000, and to ensure safe concurrent access using a mutex while synchronizing thread completion using pthread_join().
 
 ⸻
 
-My Thought Process
+## My Thought Process 
     - When multiple threads operate on shared memory, improper synchronization can lead to race conditions.
     - Since threads share the same address space, all threads can access the same global array.
     - To demonstrate controlled parallelism, the array of size 1000 can be divided into four equal segments.
@@ -27,7 +27,7 @@ This approach helped in understanding:
 
 ⸻
 
-Algorithm
+## Algorithm
 
 Step 1: Start the program.
 
