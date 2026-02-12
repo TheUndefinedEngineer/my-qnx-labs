@@ -4,10 +4,9 @@
 
 To create a multithreaded application using POSIX threads in which four threads update different segments of a shared array of size 1000, and to ensure safe concurrent access using a mutex while synchronizing thread completion using pthread_join().
 
-⸻
+## My Thought Process
 
-## My Thought Process 
-    - When multiple threads operate on shared memory, improper synchronization can lead to race conditions.
+- When multiple threads operate on shared memory, improper synchronization can lead to race conditions.
     - Since threads share the same address space, all threads can access the same global array.
     - To demonstrate controlled parallelism, the array of size 1000 can be divided into four equal segments.
     - Each thread will be responsible for updating exactly 250 elements.
@@ -20,12 +19,11 @@ To create a multithreaded application using POSIX threads in which four threads 
 
 This approach helped in understanding:
     - Shared memory behavior in multithreaded programs
-	- The concept of critical sections
-	- Practical implementation of mutual exclusion
-	- The difference between synchronized and unsynchronized execution
-	- Proper thread lifecycle management
+    - The concept of critical sections
+    - Practical implementation of mutual exclusion
+    - The difference between synchronized and unsynchronized execution
+    - Proper thread lifecycle management
 
-⸻
 
 ## Algorithm
 
