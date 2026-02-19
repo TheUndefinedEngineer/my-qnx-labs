@@ -30,10 +30,15 @@ This approach helped in understanding:
 ## Algorithm
 
 Step 1: Start the program.
+
 Step 2: Declare a fixed-size buffer (circular queue).
+
 Step 3: Initialize front, rear, and count variables.
+
 Step 4: Initialize mutex and condition variables (not_empty and not_full).
+
 Step 5: Create producer thread.
+
 Step 6: Create consumer thread.
 
 Producer Thread:
