@@ -60,6 +60,7 @@ Consumer Thread:
 - Unlock the mutex.
 
 Step 7: Wait for both threads using pthread_join().
+
 Step 8: End the program.
 
 
