@@ -58,6 +58,7 @@ Consumer Thread:
 - Unlock mutex.
 
 Step 7: Wait for all threads using pthread_join().
+
 Step 8: End the program.
 
 
