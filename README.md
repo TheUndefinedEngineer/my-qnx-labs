@@ -19,10 +19,15 @@ Aim : To implement a multithreaded application using POSIX threads in which mult
 ## Experiment 3
 Aim: To write a program to create a process with 4 threads that update the portion of array of size 1000 bytes by updating 250 bytes each. Make the main thread to join on the 4 threads and print the completion. Use mutex to prevent data corruption while each thread is updating the array.
 
+[Experiment 3 - Multithread using mutex](Exp3/EXP3.md)
 
 ## Experiment 4
 Aim: To implement and demonstrate inter-thread communication using a shared queue protected by POSIX mutexes and condition variables, where one thread produces data and another thread consumes data asynchronously in a thread-safe manner.
 
+[Experiment 4](Exp4/Exp4.md)
+
 
 ## Experiment 5
 Aim: To implement a thread-safe bounded buffer (also known as a circular queue) that is shared between multiple producer threads and multiple consumer threads. The buffer has a fixed size (N slots). Producers add items to the buffer, and consumers remove items from the buffer.
+
+[Experiment 5](Exp5/EXP5.md)
