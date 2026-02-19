@@ -28,10 +28,15 @@ This experiment helped in understanding:
 ## Algorithm
 
 Step 1: Start the program.
+
 Step 2: Declare fixed-size circular buffer.
+
 Step 3: Initialize front, rear, and count variables.
+
 Step 4: Initialize mutex and condition variables.
+
 Step 5: Create multiple producer threads using a loop.
+
 Step 6: Create multiple consumer threads using a loop.
 
 Producer Thread:
