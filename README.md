@@ -37,16 +37,16 @@ Aim: To implement a thread-safe bounded buffer (also known as a circular queue) 
 ## Experiment 6
 Aim: To implement the Send–Receive–Reply communication mechanism between a client and server process in QNX Neutrino RTOS, where the client sends a string message to the server and the server calculates and returns the checksum of the received string using message passing functions such as ChannelCreate(), ConnectAttach(), MsgSend(), MsgReceive(), and MsgReply().
 
-[Experiment 6 - IPC Messaging Passing](Exp6/EXP6.md)
+[Experiment 6 - IPC Messaging Passing](Exp6/EXP6.md) - work in progress for the readme
 
 ---
 ## Experiment 7
 Aim: To implement pulse-based and message-based Inter-Process Communication (IPC) between a client and server in QNX Neutrino RTOS, where the client sends a pulse and a string message to the server and the server processes the pulse and returns the checksum of the received string.
 
-[Experiment 7 - IPC Message Passing & Pulse](Exp7/EXP7.md)
+[Experiment 7 - IPC Message Passing & Pulse](Exp7/EXP7.md) - work in progress for the readme
 
 ---
 ## Experiment 8
 Aim: To implement client–server communication using the name lookup mechanism in QNX Neutrino RTOS, where the client finds the server using a registered name instead of PID and CHID, sends a pulse and message, and receives the checksum reply.
 
-[Experiment 8 - IPC Message Passing & Pulse using Register name](Exp8/EXP8.md)
+[Experiment 8 - IPC Message Passing & Pulse using Register name](Exp8/EXP8.md) - work in progress for the readme
