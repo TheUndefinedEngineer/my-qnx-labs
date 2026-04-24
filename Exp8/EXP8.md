@@ -39,9 +39,9 @@ disconnected”
 24. The server continues waiting for further pulses and messages.
 
 ## Result
-Successfully implemented IPC communication mechanism between a server and a client using the functions name_attach(), name_detach(), name_open(), and name_close().
+Successfully implemented IPC communication mechanism between a server and a client using the functions `name_attach()`, `name_detach()`, `name_open()`, and `name_close()`.
 
 ## Key Learning Outcomes
 - Basic understanding of message-based Inter-Process Communication (IPC). 
-- The use of the functions - name_attach(), name_detach(), name_open(), and name_close().
+- The use of the functions - `name_attach()`, `name_detach()`, `name_open()`, and `name_close()`.
 - Better understanding of client-server relationship and working.
