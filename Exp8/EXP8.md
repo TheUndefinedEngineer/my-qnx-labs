@@ -14,28 +14,28 @@ The server still needs to run first to register the name. If the client calls `n
 ## Algorithm
 1. Start the program.
 2. Run the server program first.
-3. The server registers itself with a name ("server") using name_attach().
+3. The server registers itself with a name ("server") using `name_attach()`.
 4. The OS creates a channel internally and associates it with the given name.
-5. The server enters an infinite loop and waits for communication using MsgReceive().
+5. The server enters an infinite loop and waits for communication using `MsgReceive()`.
 6. Run the client program.
 7. The client connects to the server using name_open("server", 0) and obtains a Connection ID (coid).
 8. The client prepares a message containing the string "Mohan Sai".
 9. The client sends a pulse using MsgSendPulse() with:
 10. pulse code = 3
-11. pulse value = 0xC0DEBEEF
-12. The server receives the pulse using MsgReceive().
-13. If rcvid == 0, the server identifies it as a pulse:
-14. If it is a disconnect pulse (_PULSE_CODE_DISCONNECT), it prints “Client
+11. pulse value = `0xC0DEBEEF`
+12. The server receives the pulse using `MsgReceive()`.
+13. If `rcvid == 0`, the server identifies it as a pulse:
+14. If it is a disconnect pulse (`_PULSE_CODE_DISCONNECT`), it prints “Client
 disconnected”
 15. Otherwise, it prints:
 16. “Pulse Received, Client active!”
 17. Pulse code and pulse value
-18. The client sends a message using MsgSend().
-19. The server receives the message (rcvid > 0) and extracts the string.
-20. The server computes the checksum using calculate_checksum().
-21. The server sends the checksum back using MsgReply().
+18. The client sends a message using `MsgSend()`.
+19. The server receives the message (`rcvid > 0`) and extracts the string.
+20. The server computes the checksum using `calculate_checksum()`.
+21. The server sends the checksum back using `MsgReply()`.
 22. The client receives the checksum and displays it.
-23. The client closes the connection using name_close().
+23. The client closes the connection using `name_close()`.
 24. The server continues waiting for further pulses and messages.
 
 ## Result
