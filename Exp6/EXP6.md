@@ -4,11 +4,11 @@
 To implement the Send–Receive–Reply communication mechanism between a client and server process in QNX Neutrino RTOS, where the client sends a string message to the server and the server calculates and returns the checksum of the received string using message passing functions such as ChannelCreate(), ConnectAttach(), MsgSend(), MsgReceive(), and MsgReply().
 
 ## My Thought Process
-- One process needs to send a message to another process through a client-server realationship.
-- The server has to create a channel which a client can connect to - chid.
-- The client connects to the server using the pid and chid, therefore the server must run first to obtain the pid.
-- The client sends a message using MsgSend() which is received by the server using MsgReceive and the servers receives it into a buffer of predefined size.
-- The server has to process the message and send back a reply using MsgReply().
+The requirement is a synchronous, bidirectional exchange between two processes - the client sends data and needs a processed result back. MsgSend(), MsgReceive(), and MsgReply() is the natural fit since MsgSend() blocks the client until the server explicitly replies, guaranteeing the client always gets a response.
+
+The server must run first because it owns the channel - the client needs the server's PID and CHID to call ConnectAttach(). Writing these to `/tmp/server_chid.txt` is a simple runtime rendezvous without hardcoding.
+
+The server loops indefinitely after replying so it can serve multiple clients, while the client terminates once it receives its result - reflecting a typical service-consumer pattern.
 
 ## Algorithm
     1. Start the program.
@@ -36,6 +36,6 @@ To implement the Send–Receive–Reply communication mechanism between a client
 Successfully implemented SEND-RECEIVE-REPLY communication mechanism between a server and a client using the functions MsgSend(), MsgReceive(), MsgReply, ChannelCreate(), and ConnectAttach().
 
 ## Key Learning Outcomes
-- Basic understanding of interprocess message passing (IPC)
+- Basic understanding of message-based Inter-Process Communication (IPC). 
 - The use of the functions - MsgSend(), MsgReceive(), MsgReply, ChannelCreate(), and ConnectAttach()
 - Better understanding of client-server relationship and working.
