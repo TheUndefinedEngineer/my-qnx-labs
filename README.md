@@ -50,3 +50,19 @@ Aim: To implement pulse-based and message-based Inter-Process Communication (IPC
 Aim: To implement client–server communication using the name lookup mechanism in QNX Neutrino RTOS, where the client finds the server using a registered name instead of PID and CHID, sends a pulse and message, and receives the checksum reply.
 
 [Experiment 8 - IPC Message Passing & Pulse using Register name](Exp8/EXP8.md)
+
+---
+## Experiment 9
+[Experiment 9 - ](Exp9/EXP9.md)
+
+---
+## Experiment 10
+[Experiment 10 - ](Exp10/EXP10.md)
+
+---
+## Experiment 11
+[Experiment 11 - ](Exp11/EXP11.md)
+
+---
+## Experiment 12
+[Experiment 12 - ](Exp12/EXP12.md)
